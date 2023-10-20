@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-from count_sentences import MyString
-
-import io
 import sys
+import os
+import io  # Added import for 'io' module
+
+from count_sentences import MyString
 
 class TestMyString:
     '''MyString in count_sentences.py'''
@@ -45,3 +46,4 @@ class TestMyString:
         assert(simple_string.count_sentences() == 3)
         assert(empty_string.count_sentences() == 0)
         assert(complex_string.count_sentences() == 4)
+
